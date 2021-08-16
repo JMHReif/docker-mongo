@@ -1,0 +1,23 @@
+= Docker image for MongoDB
+
+This image is a build of MongoDB's Docker image.
+
+== Building and running the image
+
+You can build the image on your local machine with the following commands:
+
+[source,shell]
+----
+cd docker/
+
+docker build . -t jmreif/mongodb
+----
+
+To run the container, execute the following command in the root directory:
+
+[source,shell]
+----
+./runMongoDB.sh
+----
+
+You can run a `docker ps` at the command line to verify the container is still running.
